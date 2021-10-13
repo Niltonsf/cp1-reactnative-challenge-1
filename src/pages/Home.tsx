@@ -19,10 +19,10 @@ export function Home() {
   }
 
   function handleToggleTaskDone(id: number) {
-    const filteredData = tasks.map(task =>
+    const filteredTasks = tasks.map(task =>
 			task.id === id ? { ...task, done: !task.done } : task
 		);
-		setTasks(filteredData);
+		setTasks(filteredTasks);
   }
 
   function handleRemoveTask(id: number) {
